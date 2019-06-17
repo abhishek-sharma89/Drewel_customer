@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular_0.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchHeaderView" customModule="Drewel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="57"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ncB-8s-Xkf">
+                    <rect key="frame" x="0.0" y="0.0" width="387" height="57"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKL-x8-ONV">
+                            <rect key="frame" x="10" y="10" width="367" height="42"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="0.95294117649999999" green="0.47843137250000001" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="imageEdgeInsets" minX="10" minY="5" maxX="0.0" maxY="5"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                    <color key="value" red="0.95294117649999999" green="0.47843137250000001" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                    <size key="value" width="0.0" height="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnSearchAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZwC-KZ-bhB"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noh-9e-5YH">
+                            <rect key="frame" x="50" y="19.5" width="46.5" height="18"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                            <color key="textColor" red="0.95294117649999999" green="0.47843137250000001" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="search"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6N-1H-y2C">
+                            <rect key="frame" x="18" y="18" width="21" height="21"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="hdD-aK-s0j"/>
+                                <constraint firstAttribute="width" constant="21" id="lQa-Qd-8EZ"/>
+                            </constraints>
+                            <color key="tintColor" red="0.92547598870000003" green="0.46726466280000001" blue="0.23573110159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="search"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="pKL-x8-ONV" secondAttribute="bottom" constant="5" id="3hG-mw-i1m"/>
+                        <constraint firstItem="pKL-x8-ONV" firstAttribute="leading" secondItem="ncB-8s-Xkf" secondAttribute="leading" constant="10" id="60x-4o-Fpe"/>
+                        <constraint firstItem="noh-9e-5YH" firstAttribute="leading" secondItem="l6N-1H-y2C" secondAttribute="trailing" constant="11" id="6x5-I0-rZt"/>
+                        <constraint firstItem="pKL-x8-ONV" firstAttribute="top" secondItem="ncB-8s-Xkf" secondAttribute="top" constant="10" id="EMu-na-P5n"/>
+                        <constraint firstItem="noh-9e-5YH" firstAttribute="centerY" secondItem="ncB-8s-Xkf" secondAttribute="centerY" id="GfY-6N-x9D"/>
+                        <constraint firstItem="l6N-1H-y2C" firstAttribute="centerY" secondItem="ncB-8s-Xkf" secondAttribute="centerY" id="WkH-U0-30J"/>
+                        <constraint firstItem="l6N-1H-y2C" firstAttribute="leading" secondItem="ncB-8s-Xkf" secondAttribute="leading" constant="18" id="iie-x2-zIp"/>
+                        <constraint firstAttribute="trailing" secondItem="pKL-x8-ONV" secondAttribute="trailing" constant="10" id="oh8-7k-9rG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ncB-8s-Xkf" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="EqD-ZK-Tiy"/>
+                <constraint firstItem="ncB-8s-Xkf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="JnQ-71-lTm"/>
+                <constraint firstItem="ncB-8s-Xkf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="LmS-A0-eGC"/>
+                <constraint firstItem="ncB-8s-Xkf" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Y21-NP-MZG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnSearch" destination="pKL-x8-ONV" id="Rbw-bK-7ht"/>
+            </connections>
+            <point key="canvasLocation" x="-492.5" y="-36.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="search" width="21" height="21"/>
+    </resources>
+</document>
